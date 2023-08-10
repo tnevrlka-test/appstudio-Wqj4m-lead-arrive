@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-m6pb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/release-e2e-bundle-tenant/appstudio/dc-metro-map-m6pb@sha256:dc1d111449935a42aeae39261f145879ab41f6543c030b2d43eae7ed177e556c
+        name: my-nodejs
+        resources: {}
+status: {}
